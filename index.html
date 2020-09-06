@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="./owlcarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./owlcarousel/dist/assets/owl.theme.default.min.css">
+
+    <title>Meetime - Digital Adventures</title>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="page-header">
+      <div class="container">
+        <nav class="navbar navbar-expand-md navbar-dark">
+          <a class="navbar-brand" href="#">Meetime</a>    
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Florian Lutz <i class="far fa-user-circle profile-icon"></i><span class="sr-only">(current)</span></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="jumbotron header-jumbotron text-center d-flex flex-column justify-content-center align-items-center">
+          <h2 class="display-4">Digital Adventures</h2>
+          <h1 class="display-">Einzigartige Erlebnisse von zuhause aus</h1>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Header -->
+    <header class="mobile-header">
+      <div class="container">
+        <nav class="navbar navbar-expand-md navbar-light">
+          <a class="navbar-brand" href="#">Meetime</a>  
+              <a class="nav-link" href="#">Florian Lutz <i class="far fa-user-circle profile-icon"></i><span class="sr-only">(current)</span></a>
+        </nav>
+      </div>
+    </header>
+    <!-- End Header Section -->
+
+
+    <!-- Filter Section -->
+    <div class="filter-container">
+      <div class="btn-group outer-group" role="group">
+        <button type="button" class="btn btn-borderpiece">Datum <i class="far fa-calendar-alt calendar"></i></button>
+        <div class="btn-group" role="group">
+          <button id="btnGroupDrop1" type="button" class="btn btn-borderpiece dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tageszeit</button>
+          <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <li href="#" class="dropdown-item"><input class="radio" type="radio" name="daytime" value="Vormittag">Vormittag</li>
+            <li href="#" class="dropdown-item"><input class="radio" type="radio" name="daytime" value="Mittag">Mittag</li>
+            <li href="#" class="dropdown-item"><input class="radio" type="radio" name="daytime" value="Nachmittag">Nachmittag</li>
+          </div>
+        </div>
+        <div class="btn-group" role="group">
+          <button id="btnGroupDrop2" type="button" class="btn btn-borderpiece dropdown-toggle button-end" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Preis</button>
+          <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <section class="range-slider" id="facet-price-range-slider">
+              <input name="range-1" value="0" min="0" max="250" step="10" type="range">
+              <input name="range-2" value="250" min="0" max="250" step="10" type="range">
+            </section>
+          </div>
+        </div>
+        <button type="button" class="btn">Sprachen</button>
+        <div class="btn-group" role="group">
+          <button id="btnGroupDrop3" type="button" class="btn btn-borderpiece dropdown-toggle button-end" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kategorien</button>
+          <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <a href="#" class="dropdown-item">Essen & Trinken</a>
+            <a href="#" class="dropdown-item">Gesundheit</a>
+            <a href="#" class="dropdown-item">IT</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="btn filter">Filter <i class="fas fa-filter"></i></button>
+    <!-- End Filter Section -->
+
+
+    <!-- Drinks Section -->
+    <div class="carousel-wrap">
+      <div class="text-container">
+        <p class="mb-12"><strong>Funtime Daydrinking </strong>- <em>Leckere Drinks mixen und in guter Gesellschaft genießen</em></p>
+        <p class="text-right">Anzeigen (17)</p>
+      </div>
+      <div class="owl-carousel">
+        <div class="item">
+          <img class="image" src="/img/caipi.jpg" alt="">
+          <p class="mb-12" ><i class="fas fa-star star-icon"></i>4.8 / 5 (220) - <em>New York</em></p>
+          <p class="mb-12"><strong>Caipis wie im Urlaub</strong></p>
+          <p>Ab <strong>10€</strong> pro Person</p>
+        </div>
+        <div class="item">
+          <img class="image" src="/img/wine.jpg" alt="">
+          <p class="mb-12" ><i class="fas fa-star star-icon"></i>4.9 / 5 (351) - <em>Bingen</em></p>
+          <p class="mb-12"><strong>Wein aus Deutschland</strong></p>
+          <p>Ab <strong>8€</strong> pro Person</p>
+        </div>
+        <div class="item">
+          <img class="image" src="/img/whiskey.jpg" alt="">
+          <p class="mb-12" ><i class="fas fa-star star-icon"></i>4.9 / 5 (720) - <em>Dublin</em></p>
+          <p class="mb-12"><strong>Whiskey - The Classic</strong></p>
+          <p>Ab <strong>15€</strong> pro Person</p>
+        </div>
+        <div class="item">
+          <img class="image" src="/img/beer.jpg" alt="">
+          <p class="mb-12" ><i class="fas fa-star star-icon"></i>4.9 / 5 (241) - <em>London</em></p>
+          <p class="mb-12"><strong>International Beer Tasting</strong></p>
+          <p>Ab <strong>10€</strong> pro Person</p>
+        </div>
+        <div class="item">
+          <img class="image" src="/img/bar.jpg" alt="">
+          <p class="mb-12" ><i class="fas fa-star star-icon"></i>5 / 5 (20) - <em>Paris</em></p>
+          <p class="mb-12"><strong>The Bar Talk</strong></p>
+          <p><strong>Kostenlos</strong></p>
+        </div>
+      </div>
+      <div class="custom-nav owl-nav"></div>
+    </div>
+    <!-- End Drinks Section -->
+
+
+    <!-- Food Section -->
+    <div class="carousel-wrap">
+      <div class="text-container">
+        <p class="mb-12"><strong>Fine Dining </strong>- <em>Delikatessen aus aller Welt entdecken</em></p>
+        <p class="text-right">Anzeigen (8)</p>
+      </div>
+      <div class="owl-carousel">
+        <div class="item">
+          <img class="image" src="/img/naan.jpg" alt="">
+          <p class="mb-12" ><i class="fas fa-star star-icon"></i>4.8 / 5 (137) - <em>New Delhi</em></p>
+          <p class="mb-12"><strong>Echtes Naan backen</strong></p>
+          <p>Ab <strong>5€</strong> pro Person</p>
+        </div>
+        <div class="item">
+          <img class="image" src="/img/abnehmen.jpg" alt="">
+          <p class="mb-12" ><i class="fas fa-star star-icon"></i>4.7 / 5 (75) - <em>Berlin</em></p>
+          <p class="mb-12"><strong>Lecker Abnehmen</strong></p>
+          <p><strong>Kostenlos</strong></p>
+        </div>
+        <div class="item">
+          <img class="image" src="/img/coffee.jpg" alt="">
+          <p class="mb-12" ><i class="fas fa-star star-icon"></i>5 / 5 (600) - <em>Rom</em></p>
+          <p class="mb-12"><strong>Kaffeerunde mit Barista</strong></p>
+          <p><strong>Kostenlos</strong></p>
+        </div>
+        <div class="item">
+          <img class="image" src="/img/italian-pizza.jpg" alt="">
+          <p class="mb-12" ><i class="fas fa-star star-icon"></i>4.8 / 5 (415) - <em>Neapel</em></p>
+          <p class="mb-12"><strong>How to: Real Italian Pizza</strong></p>
+          <p>Ab <strong>5€</strong> pro Person</p>
+        </div>
+        <div class="item">
+          <img class="image" src="/img/food-prep.jpg" alt="">
+          <p class="mb-12" ><i class="fas fa-star star-icon"></i>4.7 / 5 (19) - <em>München</em></p>
+          <p class="mb-12"><strong>Fitness Food Prep (Talk)</strong></p>
+          <p>Ab <strong>12€</strong> pro Person</p>
+        </div>
+      </div>
+    </div>
+    <!-- End Food Section -->
+
+
+    <!-- More Section -->
+    <section class="loadmore">
+        <button class="btn loadmorebtn">Mehr laden</button>
+    </section>
+    <!-- End More Section -->
+
+
+    <!-- Footer Section -->
+    <section class="footer">
+        <div class="bottom-container">
+            <div class="ueber">
+                <h4>Über</h4>
+                <p class="subtxt"><a href="#">Die Idee dahinter</a></p>
+                <p class="subtxt"><a href="#">Werde Gastgeber</a></p>
+                <p class="subtxt"><a href="#">Pressebereich</a></p>
+                <p class="subtxt"><a href="#">Team</a></p>
+                <p class="subtxt"><a href="#">Karriere</a></p>
+            </div>
+            <div class="support">
+                <h4>Support</h4>
+                <p class="subtxt"><a href="#">Neuigkeiten</a></p>
+                <p class="subtxt"><a href="#">Stornierungsmöglichkeiten</a></p>
+                <p class="subtxt"><a href="#">Vertrauen & Sicherheit</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bottom">
+        <div class="site-container">
+            <p>© 2020 Meetime GmbH</p>
+            <p><a href="#">Datenschutz</a></p>
+            <p><a href="#">Impressum</a></p>
+            <p><a href="#">Sitemap</a></p>
+        </div>
+        <div class="socialmedia">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+        </div>
+    </section>
+    <!-- End Footer Section -->
+
+    
+    <script type="text/javascript" src="jquery/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="bootstrap.bundle.min.js"></script>
+
+    <script src="./owlcarousel/dist/"></script>
+    <script src="./owlcarousel/dist/owl.carousel.min.js"></script>
+
+    <script src="main.js"></script>
+    
+</body>
+</html>
